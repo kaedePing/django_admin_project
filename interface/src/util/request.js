@@ -3,6 +3,16 @@ import axios from 'axios';
 
 
 let baseUrl="http://localhost:8000/";
+
+// if (process.env.NODE_ENV === 'development') {
+//   // 开发环境
+//   baseUrl = 'http://localhost:8000/';
+// } else {
+//   // 生产环境
+//   baseUrl = 'https://your-production-api.com/';
+// }
+
+
 // 创建axios实例
 const httpService = axios.create({
     // url前缀-'http:xxx.xxx'
